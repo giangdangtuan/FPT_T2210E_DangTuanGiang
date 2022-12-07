@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEDIA</title>
+    <script>
+        // alert("Well come to T2210E");
+        // confirm("Ban co muon thi lai kgon");
+        // var number = parseInt("1");
+        // console.log("number "+number);
+        // var name = prompt("Vui long nhap ten cua b");
+        // console.log("Ten cua b la :"+name);
+        function onKeyup(){
+            var name = document.getElementById("nameId").value;
+            console.log("name "+name);
+        }
+        function mouse(){
+            document.getElementById("nameId").value="T2210E";
+            document.getElementById("nameId").style.color = "red";
+        }
+        function Blur(){
+            document.getElementById("nameId").value="T2210E";
+            document.getElementById("nameId").style.color = "blue";
+            console.log("test blur funcion");
+        }
+    </script>
+</head>
+<body>
+<!--<audio src="../audio/WaitingForYou-MONOOnionn-7733882.mp3" controls autoplay loop>alo</audio>-->
+<!--<br/>-->
+<input type="text" name="name" onkeyup="onKeyup()" onblur="Blur()" onmousemove="mouse()" id="nameId">
+</body>
+</html>

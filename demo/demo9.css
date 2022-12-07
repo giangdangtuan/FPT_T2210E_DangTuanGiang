@@ -1,0 +1,19 @@
+tr{
+    width: 200px;
+    text-align: center;
+}
+td{
+    color: white;
+    background-color: black;
+    font-size: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid blue;
+}
+a{
+    text-decoration: none;
+}

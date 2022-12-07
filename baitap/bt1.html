@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin sinh viên</title>
+    <link rel="stylesheet" href="bt1.css">
+</head>
+<body>
+<div class="container">
+    <form action="#">
+        <div class="row">
+            <div class="col-25">
+                <label for="nameId">Tên</label>
+            </div>
+            <div class="col-75">
+                <input type="text" oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" required name="name" id="nameId" maxlength="20" placeholder="Họ và tên">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-25">
+                <label for="msv">Số thứ tự</label>
+            </div>
+            <div class="col-75">
+                <input type="number" oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" required name="msv" id="msv" min="1" max="28" step="1" placeholder="Từ 1 đến 28">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-25">
+                <label>Giới tính</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" name="gender" id="genderId1">
+                <label>Nam</label>
+                <input type="radio" name="gender" id="genderId2">
+                <label>Nữ</label>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-25">
+                <label>Ngày sinh</label>
+            </div>
+            <div class="col-75">
+                <input type="datetime-local">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-25">
+                <label>Ngoại ngữ</label>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" name="language1">
+                <label>Tiếng Anh</label>
+                <input type="checkbox" name="language2">
+                <label>Tiếng Nhật</label>
+                <input type="checkbox" name="language3">
+                <label>Tiếng Trung</label>
+                <label>&nbsp;&nbsp;Khác :</label>
+                <input type="text" name="language4" placeholder="...">
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-25">
+                <label>Góp ý</label>
+            </div>
+            <div class="col-75">
+                <textarea id="gopY" name="gopY" placeholder="Viết gì đó..."></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>File</label>
+            </div>
+            <div class="col-75">
+                <input type="file">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
